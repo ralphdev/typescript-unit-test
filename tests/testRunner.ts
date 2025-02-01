@@ -1,13 +1,12 @@
 import { jest } from '@jest/globals';
+import './infra/azureConnection.spec';
 
 jest.setTimeout(15000); // Timeout global de 15 segundos
 
-beforeEach( () => {
+beforeEach(() => {
     console.log('[Inicio] Ejecutando todas las pruebas...');
 });
 
-afterAll( () => {
+afterAll(() => {
     console.log('[Fin] Pruebas completadas');
 });
-
-import './infra/azureConnection.spec';
